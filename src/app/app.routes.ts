@@ -7,6 +7,10 @@ import { TelephoneComponent } from './pages/landing/telephone/telephone.componen
 import { PeotvComponent } from './pages/landing/peotv/peotv.component';
 import { BroadbandComponent } from './pages/landing/broadband/broadband.component';
 import { PaymentComponent } from './pages/landing/payment/payment.component';
+import { CustomerLayoutComponent } from './layouts/customer-layout/customer-layout.component';
+import { PendingRequestsComponent } from './pages/customer/pending-requests/pending-requests.component';
+import { HistoryComponent } from './pages/customer/history/history.component';
+import { ProfileComponent } from './pages/customer/profile/profile.component';
 
 export const routes: Routes = [
     {
@@ -25,6 +29,15 @@ export const routes: Routes = [
         children: [
             { path: 'login', component: LoginComponent },
             { path: 'register', component: RegisterComponent },
+        ]
+    },
+    {
+        path: 'customer',
+        component: CustomerLayoutComponent,
+        children: [
+            { path: '', component: PendingRequestsComponent },
+            { path: 'history', component: HistoryComponent },
+            { path: 'profile', component: ProfileComponent },
         ]
     }
 ];

@@ -1,0 +1,80 @@
+<div class="m-8">
+    <div class="overflow-x-auto mt-12 w-7/12 flex flex-col mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6 mt-8 mx-1">
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Name</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Customer ID</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" disabled/>
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Landline Number</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Mobile Number</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Email</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Address</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+        </div>
+        
+        <h1 class="font-bold text-xl mt-20 text-gray1">Change Password</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6 mt-4 mx-1">
+            <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold">Current Password</span>
+                </div>
+                <div class="relative">
+                  <input type="text" placeholder="" class="input input-bordered w-full" />
+                  <i class="fas fa-eye-slash absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </label>   
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 mt-6 mx-1">
+            <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold">New Password</span>
+                </div>
+                <div class="relative">
+                  <input type="text" placeholder="" class="input input-bordered w-full" />
+                  <i class="fas fa-eye-slash absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </label>   
+            <label class="form-control w-full">
+                <div class="label">
+                  <span class="label-text font-bold">Re-enter New Password</span>
+                </div>
+                <div class="relative">
+                  <input type="text" placeholder="" class="input input-bordered w-full" />
+                  <i class="fas fa-eye-slash absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </label>   
+
+            <a class="btn bg-green font-bold text-white my-16" routerLink="/auth/login">Submit</a>
+            <a class="btn border-red-500 bg-white font-bold text-red-500 my-16" routerLink="/customer">Cancel</a>
+        </div>
+      </div>
+</div>
