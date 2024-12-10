@@ -1,0 +1,65 @@
+<div class="m-8">
+    <a routerLink="" class="btn bg-white border-blue border-2 text-blue font-bold"><i class="fa-solid fa-arrow-left"></i>Back</a>
+
+    <div class="overflow-x-auto mt-12 w-7/12 flex flex-col mx-auto">
+        <h1 class="font-bold text-2xl">1. Are these information correct ?</h1>
+        <p class="text-gray1 mt-1">If any of these information are not accurate, you can change them here.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-6 mt-8 mx-1">
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Name</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Landline Number</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Mobile Number</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Email</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+            <label class="form-control">
+                <div class="label">
+                    <span class="label-text font-bold">Address</span>
+                </div>
+                <input type="text" placeholder="" class="input input-bordered w-full" />
+            </label>
+        </div>
+        
+        <h1 class="font-bold text-2xl mt-20">2. Pay Amount (LKR) 5,000.00</h1>
+        <p class="text-gray1 mt-1">Select your preferred payment method</p>
+
+        <div class="flex gap-24 mt-8">
+            <div class="flex gap-4">
+                <input type="radio" name="radio-1" class="radio" />
+                <span class="font-bold">Card</span>
+            </div>
+            <div class="flex gap-4">
+                <input type="radio" name="radio-1" class="radio" />
+                <span class="font-bold">Cash</span>
+            </div>
+        </div>
+
+        <div class="cursor-pointer flex items-center gap-2 mt-16">
+            <input type="checkbox" class="checkbox checkbox-sm" />
+            <span class="label-text">I accept the <span class="text-blue"> Terms & Conditions</span></span>
+        </div> 
+
+        <div class="flex gap-4 my-6">
+            <a class="btn bg-green font-bold text-white" routerLink="/auth/login">Submit</a>
+            <a class="btn border-red-500 bg-white font-bold text-red-500" routerLink="/auth/login">Cancel</a>
+          </div>
+      </div>
+</div>
