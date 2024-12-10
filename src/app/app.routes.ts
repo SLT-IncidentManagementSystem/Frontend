@@ -6,6 +6,7 @@ import { RegisterComponent } from './pages/auth/register/register.component';
 import { TelephoneComponent } from './pages/landing/telephone/telephone.component';
 import { PeotvComponent } from './pages/landing/peotv/peotv.component';
 import { BroadbandComponent } from './pages/landing/broadband/broadband.component';
+import { PaymentComponent } from './pages/landing/payment/payment.component';
 
 export const routes: Routes = [
     {
@@ -16,6 +17,7 @@ export const routes: Routes = [
             { path: 'telephone', component: TelephoneComponent},
             { path: 'peotv', component: PeotvComponent},
             { path: 'broadband', component: BroadbandComponent},
+            { path: 'paymentConfirmation', component: PaymentComponent},
         ]
     },
     {
