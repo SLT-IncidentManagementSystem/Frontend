@@ -11,6 +11,11 @@ import { CustomerLayoutComponent } from './layouts/customer-layout/customer-layo
 import { PendingRequestsComponent } from './pages/customer/pending-requests/pending-requests.component';
 import { HistoryComponent } from './pages/customer/history/history.component';
 import { ProfileComponent } from './pages/customer/profile/profile.component';
+import { AssignedRequestsComponent } from './pages/technician/assigned-requests/assigned-requests.component';
+import { TechnicianLayoutComponent } from './layouts/technician-layout/technician-layout.component';
+import { TechnicianHistoryComponent } from './pages/technician/technician-history/technician-history.component';
+import { TechnicianFinancialComponent } from './pages/technician/technician-financial/technician-financial.component';
+import { TechnicianProfileComponent } from './pages/technician/technician-profile/technician-profile.component';
 
 export const routes: Routes = [
     {
@@ -38,6 +43,16 @@ export const routes: Routes = [
             { path: '', component: PendingRequestsComponent },
             { path: 'history', component: HistoryComponent },
             { path: 'profile', component: ProfileComponent },
+        ]
+    },
+    {
+        path: 'technician',
+        component: TechnicianLayoutComponent,
+        children: [
+            { path: '', component: AssignedRequestsComponent },
+            { path: 'history', component: TechnicianHistoryComponent },
+            { path: 'financial', component: TechnicianFinancialComponent },
+            { path: 'profile', component: TechnicianProfileComponent },
         ]
     }
 ];
